@@ -63,15 +63,15 @@ h3{
 }
 
 .icon{
-    max-width: 7.5%;
-    padding-top: 5%;
+    max-width: 50%;
+    padding-top: 3%;
     padding-left: 3%;
-    padding-bottom: 1%;     /* top, right, bottom, left */
-    opacity: 1;
+    padding-bottom: 1.5%;     /* top, right, bottom, left */
 }
 
-.icon:hover {
-    opacity: 0.5; 
+.liked{
+    fill: #fb3958;
+    stroke: #fb3958;
 }
 
 .likes-counter{
@@ -80,13 +80,21 @@ h3{
    padding-left: 3%;
 }
 
-.comment{
+.comment-section{
+    display: flex;
     padding-left: 3%;
+}
+
+.comment, .username-class{
     font-size: 3.6vw;
     margin-top: 1.2%;
 
 }
 
-.bold-text{
+.comment{
+    padding-left: 2%;
+}
+
+.username-class{
     font-weight: 700;
 }
