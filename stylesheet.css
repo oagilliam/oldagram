@@ -98,3 +98,107 @@ h3{
 .username-class{
     font-weight: 700;
 }
+
+/*@media only screen and (max-width: 520px) {
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3% 3% 1.5% 3%; 
+        border-bottom: 1px solid #C6C6C6;
+    }
+    
+    .logo{
+        max-width: 50%;
+        color:#fb3958;
+    }
+    
+    .pfp{
+        clip-path: circle();
+        max-width: 8%;
+    }
+    
+    .avatar{
+        clip-path: circle();
+        max-width: 10%;
+    }
+    
+    .user-location{
+        display: flex;
+        flex-direction: row;
+        padding: 3%;
+    }
+    
+    h3{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 10%;
+        white-space: nowrap;
+    }
+    
+    .name{
+        font-size: 3.6vw;
+        font-weight: 700;
+        max-width: 100%;
+    }
+    
+    .location {
+        font-size: 3.3vw;
+        font-weight: 400;
+        max-width: 100%;
+    }
+    
+    
+    .post-img{
+        max-width: 100%;
+        display: block;
+    }
+    
+    .icon-imgs{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .icon{
+        max-width: 50%;
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-bottom: 1.5%;     
+    }
+    
+    .liked{
+        fill: #fb3958;
+        stroke: #fb3958;
+    }
+    
+    .likes-counter{
+       font-weight: 700; 
+       font-size: 3.6vw;
+       padding-left: 3%;
+    }
+    
+    .comment-section{
+        display: flex;
+        padding-left: 3%;
+    }
+    
+    .comment, .username-class{
+        font-size: 3.6vw;
+        margin-top: 1.2%;
+    
+    }
+    
+    .comment{
+        padding-left: 2%;
+    }
+    
+    .username-class{
+        font-weight: 700;
+    }
+  } */
