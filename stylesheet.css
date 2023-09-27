@@ -99,9 +99,18 @@ h3{
     font-weight: 700;
 }
 
+
+
+
 @media (min-width: 600px){
+    header{
+        margin-left:auto;
+        margin-right: auto;
+        max-width: 40%;
+        border-bottom: 1px solid #C6C6C6;
+    }
+
     .container{
-        border: 3px solid red;
         max-width: 45%;
         margin-left: auto;
         margin-right: auto ;
@@ -110,15 +119,20 @@ h3{
     .avatar{
         clip-path: none;
         border-radius: 50%;
-        max-width: 10%;
+        max-width: 12%;
     }
 
     .name, 
-    .location{
-        font-size: 1.5vw;
+    .location,  
+    .likes-counter,
+    .comment,
+    .username-class{
+        font-size: 1.9vw;
         
     }
 
-
+    .icon{
+        max-width: 30%;
+    }
 
 }
