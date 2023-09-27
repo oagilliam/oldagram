@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const likesID = document.getElementById("likes-el");
     const likeBtn = document.querySelector(".like-btn");
     let totalLikes = 0;
+    const commentID = document.getElementById("comment-el");
+    const containerID = document.getElementById("container-el");
 
     //SECTION 2: Dictionary with Oldagram Posts
     const posts = [
         {
-            name: "Vincent van Gogh Test",
+            name: "Vincent van Gogh",
             username: "vincey1853",
             location: "Zundert, Netherlands",
             avatar: "images/avatar-vangogh.jpg",
@@ -23,27 +25,30 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     //SECTION 3: Formatting values in dictionary to create the site layout
-    avatarID.src = posts[0].avatar;
-    nameID.innerText = posts[0].name;
-    locationID.innerText = posts[0].location;
-    postID.src = posts[0].post;
-    usernameID.innerText = posts[0].username;
-
+    for(i=0 ;i < posts.length ; i++){
+        avatarID.src = posts[i].avatar;
+        nameID.innerText = posts[i].name;
+        locationID.innerText = posts[i].location;
+        postID.src = posts[i].post;
+        usernameID.innerText = posts[i].username;
+        likesID.innerText = posts[i].likes + " likes"
+        totalLikes = posts[i].likes 
+        commentID.innerText = posts[i].comment;
+        
+    }
 
     //Increments likes when user clicks the heart/like button
     likeBtn.addEventListener("click", function(){
 
         if(likeBtn.classList.contains("liked")){
-            likeBtn.classList.remove("liked")
+            likeBtn.classList.remove("liked") 
+            totalLikes = totalLikes - 1;
+            likesID.innerText = totalLikes + " likes"
         } else{
             likeBtn.classList.add("liked")
-            totalLikes = posts[0].likes + 1;
+            totalLikes = totalLikes + 1;
             likesID.innerText = totalLikes + " likes"
         }
 
-
     })
-
-
 });
-
