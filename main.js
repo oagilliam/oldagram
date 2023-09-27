@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const likeBtn = document.querySelector(".like-btn");
     let totalLikes = 0;
     const commentID = document.getElementById("comment-el");
-    const containerID = document.getElementById("container-el");
 
     //SECTION 2: Dictionary with Oldagram Posts
     const posts = [
